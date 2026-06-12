@@ -1,0 +1,387 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+  background-color: #f9fafb;
+  color: #1f2937;
+  padding: 1rem;
+}
+
+
+.login-screen {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.login-card {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+  max-width: 400px;
+  width: 100%;
+  border: 1px solid #f3f4f6;
+  text-align: center;
+}
+
+.login-icon {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.login-title {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #111827;
+}
+
+.login-subtitle {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.form-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #4b5563;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.625rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+}
+
+.form-input:focus {
+  outline: 2px solid #4f46e5;
+}
+
+.form-input-mono {
+  font-family: monospace;
+  letter-spacing: 0.05em;
+}
+
+.btn-primary {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #4f46e5;
+  color: white;
+  font-weight: 700;
+  border: none;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  box-shadow: 0 10px 15px -3px rgba(79, 70, 229, 0.2);
+  transition: background 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: #4338ca;
+}
+
+
+.app-container {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+.main-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-b: 1px solid #e5e7eb;
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.main-title {
+  font-size: 1.875rem;
+  font-weight: 900;
+  color: #4f46e5;
+}
+
+.main-meta {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.meta-bold {
+  font-weight: 700;
+  color: #374151;
+}
+
+.btn-leave {
+  padding: 0.5rem 1rem;
+  background-color: #ffe4e6;
+  color: #e11d48;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-leave:hover {
+  background-color: #fecdd3;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.sidebar-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.dashboard-card {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  border: 1px solid #f3f4f6;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+
+.progress-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.progress-label {
+  font-weight: 700;
+  color: #4b5563;
+}
+
+.progress-total {
+  font-size: 1.25rem;
+  font-weight: 900;
+  color: #4f46e5;
+}
+
+.progress-bar-container {
+  width: 100%;
+  background-color: #f3f4f6;
+  border-radius: 9999px;
+  height: 1rem;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  width: var(--progress-width, 0%);
+  background-color: #4f46e5;
+}
+
+.progress-bar-fill.unlocked {
+  background-color: #10b981; 
+}
+
+.progress-footer-text {
+  font-size: 0.75rem;
+  color: #6b7280;
+  margin-top: 0.5rem;
+}
+
+
+.add-item-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-btn-add {
+  background-color: #4f46e5;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.form-btn-add:hover {
+  background-color: #4338ca;
+}
+
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.empty-msg {
+  color: #9ca3af;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.cart-list {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Cart Item Rows */
+.cart-item-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.875rem 0;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.cart-item-row:last-child {
+  border-bottom: none;
+}
+
+.item-info-meta {
+  font-size: 0.75rem;
+  background-color: #f3f4f6;
+  color: #4b5563;
+  padding: 0.125rem 0.5rem;
+  border-radius: 0.375rem;
+  margin-top: 0.25rem;
+  display: inline-block;
+}
+
+.item-actions-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.item-price-display {
+  font-weight: 700;
+  color: #111827;
+}
+
+.btn-delete-item {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.125rem;
+  color: #9ca3af;
+  transition: color 0.2s;
+}
+
+.btn-delete-item:hover {
+  color: #e11d48;
+}
+
+
+.log-terminal {
+  height: 12rem;
+  overflow-y: auto;
+  border: 1px solid #f3f4f6;
+  border-radius: 0.75rem;
+  padding: 0.75rem;
+  background-color: #f9fafb;
+  font-family: monospace;
+  font-size: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.log-row {
+  color: #4b5563;
+  border-bottom: 1px solid #f3f4f6;
+  padding-bottom: 0.25rem;
+}
+
+.log-row:last-child {
+  border-bottom: none;
+}
+
+
+.checkout-text {
+  font-size: 0.75rem;
+  color: #6b7280;
+  margin-bottom: 1rem;
+}
+
+.btn-print-action {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #111827;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.75rem;
+  cursor: pointer;
+}
+
+.btn-print-action:hover {
+  background-color: #1f2937;
+}
+
+
+@media (min-width: 640px) {
+  .main-header {
+    flex-direction: row;
+  }
+  .add-item-form {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1024px) {
+  .dashboard-grid {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+.receipt-print-area {
+  display: none;
+}
+
+@media print {
+  body {
+    background-color: white !important;
+    color: black !important;
+    padding: 0;
+  }
+  
+  .print-hidden {
+    display: none !important;
+  }
+  
+  .receipt-print-area {
+    display: block !important;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+}
