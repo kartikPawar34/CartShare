@@ -13,7 +13,6 @@ export default function RoomLogin({ onJoin }) {
   return (
     <div className="login-screen">
       <div className="login-card">
-        <span className="login-icon">🛒</span>
         <h2 className="login-title">Welcome to CartShare</h2>
         <p className="login-subtitle">Collaborate & pool orders seamlessly.</p>
         
